@@ -6,6 +6,11 @@ on:
       - main  # Change to your default branch if different
     paths:
       - "client/**"
+
+defaults:
+  run:
+    working-directory: container
+
 jobs:
   build:
     runs-on: ubuntu-latest
