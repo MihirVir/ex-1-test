@@ -1,0 +1,10 @@
+{
+  "Port": 8081,
+  "StartCommand": [
+    "start"
+  ],
+  "Kube": true,
+  "Language": "JavaScript",
+  "KubeServiceType": "ClusterIP",
+  "Replicas": 1
+}
