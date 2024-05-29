@@ -16,7 +16,7 @@ metadata:
   name: mongodb
 spec:
   serviceName: "mongodb"
-  replicas: 1 # 1 replica = 1 instance ins
+  replicas: 1 # 1 replica = 1 instance 
   selector:
     matchLabels:
       app: mongodb

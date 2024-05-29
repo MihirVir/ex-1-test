@@ -5,11 +5,11 @@ on:
     branches:
       - main  # Change to your default branch if different
     paths:
-      - "client/**"
+      - "client/**" # if you want to watch over some other dir use dirname/**
 
 defaults:
   run:
-    working-directory: client
+    working-directory: client # Change it to ur frontend dir or backend dir
 
 jobs:
   build:
