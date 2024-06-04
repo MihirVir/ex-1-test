@@ -1,4 +1,3 @@
-# reurn
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -6,7 +5,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLabels: 
+    matchLabels:
       app: client-depl
   template:
     metadata:
@@ -15,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: mihirvir10/react-test
+          image: mihirvir10/client
           ports:
             - containerPort: 5173

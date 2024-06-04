@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asd-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: asd-depl
+  template:
+    metadata:
+      labels:
+        app: asd-depl
+    spec:
+      containers:
+        - name: asd
+          image: asd
+          ports:
+            - containerPort: 8081
+          

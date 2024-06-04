@@ -3,7 +3,7 @@ name: CI/CD # CHANGE: change this to your service name
 on:
   push:
     branches:
-      - main  # Change to your default branch if different
+      - main # Change to your default branch if different
     paths:
       - "client/**" # if you want to watch over some other dir use dirname/**
 
@@ -20,6 +20,6 @@ jobs:
       - name: Installing Dependencies
         run: npm install # CHANGE: (if you are using any other lang/framework its required to change)
       - name: Building
-        run: npm run build # CHANGE 
+        run: npm run build # CHANGE
       - name: Testing
         run: npm run test # CHANGE
